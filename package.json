@@ -1,0 +1,48 @@
+{
+  "name": "gpt-search",
+  "displayName": "GPT Search",
+  "publisher": "BubbleDev",
+  "description": "VS Code extension to search code blocks with ChatGPT, Claude, Grok, etc",
+  "version": "0.0.2",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gpt-search.gpt-block-search",
+        "title": "GPT search"
+      },
+      {
+        "command": "gpt-search.set-search-prompt",
+        "title": "Set GPT search prompt"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "gpt-search.gpt-block-search",
+        "key": "ctrl+shift+q",
+        "when": "editorHasSelection && editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
