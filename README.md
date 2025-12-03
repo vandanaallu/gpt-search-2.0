@@ -10,7 +10,7 @@ A powerful VSCode extension that lets you instantly search and analyze your sele
 - **Browser Integration**: Seamlessly opens your selected AI provider in your default browser
 - **Keyboard Shortcuts**: Quick access with simple key combinations
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Basic Usage
 
